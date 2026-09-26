@@ -65,6 +65,15 @@ body {
   border: 1px solid #d1d1d1;
 }
 
+.generate-btn {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.generate-btn:hover {
+  filter: brightness(0.85);
+}
+
 .error {
   animation: shake 0.1s linear 10;
 }
