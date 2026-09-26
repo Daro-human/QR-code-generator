@@ -4,6 +4,14 @@
 let imgBox = document.getElementById('imgBox');
 let qrImg = document.getElementById('qrImg');
 let qrText = document.getElementById('qrText');
+let clearBtn = document.getElementById('clear-btn');
+
+
+clearBtn.addEventListener('click', () => {
+  qrText.value = '';
+  qrImg.src = '';
+  imgBox.classList.remove('show-img');
+});
 
 function GenerateQR() {
   if(qrText.value.length > 0){
